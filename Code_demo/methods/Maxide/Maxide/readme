@@ -1,0 +1,15 @@
+This package demonstrate the use of Maxide method proposed in [1].  
+
+-System requirement:
+	The code is tested in MATLABr2013a under Windows 64 bit system and MATLABr2013a under Linux 64 bit system.
+-Install
+	Go to ./Maxide, compile the xumm.c file using ">>mex xumm.c"
+	The compiled files for Windows 64 bit and Linux 64 bit are included in the package
+-Files
+	The folder "Maxide" contains all the functions needed for the methods proposed in [1].
+	The folder "data" contains the Yahoo Arts data [2].
+	"Demo_Simulation.m" demos the use of Maxide on synthetic data when n=m=1000, r=10 and r_A=r_B=20.
+	"Demo_Multi_Label.m" demos the use of Maxide on multi-label Yahoo Arts data [2].
+	
+[1]Miao Xu, Rong Jin, Zhi-Hua Zhou. Speedup matrix completion with side information: application to multi-label learning. In: NIPS, 2013.
+[2]N. Ueda, K. Saito. Parametric mixture models for multi-label text. In: NIPS, 2002.

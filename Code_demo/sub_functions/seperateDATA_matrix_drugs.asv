@@ -1,0 +1,22 @@
+function [training_E, testing_E, dump_matrix] = seperateDATA_matrix_drugs(E, dump_percent, previous_dump_matrix)
+[n1, n2] = size(E); % dimension of the tensor
+
+drugs = floor(n2/11);
+
+dump_matrix = [;
+for i = 1:drugs
+    dump_per_drug{i} = rand(n1, 1);
+    dump_per_drug{i} = dump_per_drug{i} > dump_percent;
+    dump_position = repmat(dump_position, 1, 11);
+%     dump_position = permute(dump_position,[1 3 2]);
+    training_E = tilde_T;
+    training_E(~dump_position) = 0;
+
+testing_E = tilde_T;
+testing_E(dump_position) = 0;
+dump_matrix = dump_matrix(previous_dump_matrix);
+
+
+end
+
+

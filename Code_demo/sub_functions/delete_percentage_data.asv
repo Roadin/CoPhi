@@ -1,0 +1,17 @@
+function new_matrix = generate_training_data(old_matrix, percentage_deleted)
+
+    [rows,columns = size(old_matrix, 1)
+
+    for k=1:length(random_index)
+        if rand >= 0.5
+            for i=1:11
+                E_org_train_100(random_index(k),i) = 0;
+            end
+            random_index_coc_or_opi(end+1) = 0;
+        else
+            for i=12:22
+                E_org_train_100(random_index(k),i) = 0;
+            end
+            random_index_coc_or_opi(end+1) = 1;
+        end
+    end
